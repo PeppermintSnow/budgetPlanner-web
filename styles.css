@@ -1,0 +1,70 @@
+html {
+    color: white;
+    font-family: monospace;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0f0f0f;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+#title-container {
+    width: 100%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#title-container h1 {
+    text-align: center;
+    text-shadow: -2px -2px 15px white;
+}
+
+#input-container {
+    width: 700px;
+    display: flex;
+        justify-content: center;
+    margin-bottom: 15px;
+}
+
+.center-td {
+    width: 100%;
+    text-align: center;
+}
+
+#history {
+    margin-top: 25px;
+}
+
+#history th, #history td {
+    padding: 5px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+#description-column {
+    width: 250px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+#money-overview td {
+    text-align: center;
+}
+
+#money-overview th, #money-overview td {
+    padding: 5px;
+    border: 1px solid white;
+}
+/* @media only screen and (max-width: 600px) {
+    #input-container {
+        flex-direction: column;
+    }
+} */
