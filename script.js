@@ -65,7 +65,13 @@ resetBtn.addEventListener("click", () => {
         desc.value = "";
         price.value = "";
 
-        table.innerHTML = "";
+        table.innerHTML = `
+        <tr>
+            <th><i class="fa-solid fa-dollar-sign"></i> Money Spent</th>
+            <th id="description-column"><i class="fa-solid fa-book"></i> Description</th>
+            <th><i class="fa-solid fa-piggy-bank"></i> Balance <i class="fa-solid fa-money-bill"></i> / <i class="fa-solid fa-credit-card"></i> </th>
+        </tr>
+            `;
         totalMoneySpentDOM.innerHTML = 0;
         totalCashSpentDOM.innerHTML = 0;
         totalCardSpentDOM.innerHTML = 0;
