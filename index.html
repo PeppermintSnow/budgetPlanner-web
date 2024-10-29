@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Budget Planner</title>
         <link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/97b1db2389.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="title-container">
@@ -11,44 +13,65 @@
         <form id="input-container">
             <table>
                 <tr>
-                    <th>Cash Balance:</th>
+                    <th class="align-left"><i class="fa-solid fa-money-bill"></i> Cash Balance: </th>
                     <td><input type="number" id="cash-input" /></td>
                 </tr>
                 <tr>
-                    <th>Card Balance:</th>
+                    <th class="align-left"><i class="fa-solid fa-credit-card"></i> Card Balance:</th>
                     <td><input type="number" id="card-input" /></td>
                 </tr>
                 <tr>
-                    <th>Description:</th>
+                    <th class="align-left"><i class="fa-solid fa-book"></i> Description:</th>
                     <td><input type="text" id="description-input" /></td>
                 </tr>
-            </table>
-            <table>
                 <tr>
-                    <th>Money Spent:</th>
+                    <th class="align-left"><i class="fa-solid fa-dollar-sign"></i> Money Spent:</th>
                     <td><input type="number" id="price-input" /></td>
                 </tr>
                 <tr>
-                    <td class="center-td" colspan="2">
+                    <th class="align-left"><i class="fa-solid fa-cash-register"></i> Paid using: </th>
+                    <td>
                         <input type="radio" id="radio-cash" name="cash-card" value="cash" />
-                        <label for="cash">Cash</label>
+                        <label for="cash"><i class="fa-solid fa-money-bill"></i> Cash</label>
                         <input type="radio" id="radio-card" name="cash-card" value="card" />
-                        <label for="card">Card</label>
+                        <label for="card"><i class="fa-solid fa-credit-card"></i> Card</label>
                     </td>
                 </tr>
                 <tr>
-                    <td class="center-td" colspan="2">
-                        <button id="submit">Submit</button>
+                    <td class="center-td">
+                        <button id="reset" type="button">Reset <i class="fa-solid fa-arrows-rotate"></i></button>
+                    </td>
+                    <td class="center-td">
+                        <button id="submit" type="button">Submit <i class="fa-solid fa-check"></i></button>
                     </td>
                 </tr>
             </table>
         </form>
+        <table id="money-overview">
+            <tr>
+                <td></td>
+                <th><i class="fa-solid fa-money-check-dollar"></i> Total</th>
+                <th><i class="fa-solid fa-money-bill"></i> Cash</th>
+                <th><i class="fa-solid fa-credit-card"></i> Card</th>
+            </tr>
+            <tr>
+                <th class="align-left"><i class="fa-solid fa-sack-dollar"></i> Money Spent </th>
+                <td><span id="total-money-spent"></span></td>
+                <td><span id="total-cash-spent"></span></td>
+                <td><span id="total-card-spent"></span></td>
+            </tr>
+            <tr>
+                <th class="align-left"><i class="fa-solid fa-piggy-bank"></i> Remaining Balance </th>
+                <td><span id="total-money-remaining"></span></td>
+                <td><span id="total-cash-remaining"></span></td>
+                <td><span id="total-card-remaining"></span></td>
+            </tr>
+        </table>
         <table id="history">
             <tr>
-                <th>Money Spent</th>
-                <th id="description-column">Description</th>
-                <th>Remaining Cash</th>
-                <th>Remaining Card</th>
+                <th><i class="fa-solid fa-dollar-sign"></i> Money Spent</th>
+                <th id="description-column"><i class="fa-solid fa-book"></i> Description</th>
+                <th><i class="fa-solid fa-piggy-bank"></i> Balance <i class="fa-solid fa-money-bill"></i> / <i class="fa-solid fa-credit-card"></i> </th>
             </tr>
         </table>
         <script src="script.js"></script>
