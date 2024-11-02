@@ -1,0 +1,68 @@
+@import '~bootstrap/scss/bootstrap';
+
+$black: #000411;
+$white: #FFFBFF;
+$accent1: #708B75;
+$accent2: #132E32;
+
+body { background-color: $black; font-family: monospace }
+
+/*START of Header Styles*/
+
+#header { background-color: $accent2; box-shadow: 0 0 15px; }
+#header h1 { color: $white; text-shadow: 0 0 10px $accent1; }
+#header p { color: $accent1; text-shadow: 0 0 10px $accent1; }
+.color-accent1 { color: $accent1 }
+#github-link { color: $accent1; transition: 0.3s ease-in-out; text-decoration: none;}
+#github-link:hover { color: $white; text-shadow: 0 0 15px $white; }
+
+/*END of Header Styles*/
+/*START of Form Styles*/
+
+#form-container { margin-top: 15px; }
+.row { margin: 2px; }
+.text-input-icon { margin-right: 5px; }
+#radio-cash-label { margin-right: 15px; }
+.btn { background-color: $accent2; color: $accent1; transition: 0.3s ease-in-out; border: 1px solid $accent1; }
+.btn:hover { background-color: $accent2; color: $white; box-shadow: 0 0 10px $accent2; border: 1px solid $accent1; }
+input { background-color: $accent2; color: $accent1; }
+
+.form-control, .form-control:focus, .input-group-text { 
+    background-color: $accent2; 
+    border: 1px solid $accent1;
+}
+
+.form-control, .form-control:focus { color: $white; }
+.form-control:focus { box-shadow: 0 0 5px $accent1; }
+.input-group-text, .form-control::placeholder { color: $accent1};
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.form-check-input { background-color: $accent2; border: 1px solid $accent1; }
+.form-check-input:focus { box-shadow: $accent1; }
+.form-check-input:checked { background-color: $accent2; border: 1px solid $accent1; }
+
+/*END of Form Styles*/
+/*START of Summary Styles*/
+#summary-table-container { background-color: $accent2; border: 1px solid $accent1; border-radius: 15px; width: 350px; }
+#summary-table th span { color: $accent1; }
+#summary-table th, #summary-table td { width: 110px; padding: 5px; color: $white; text-align: center }
+/*END of Summary Styles*/
+/*START of History Styles*/
+#history-table-container { background-color: $accent2; border: 1px solid $accent1; border-radius: 15px; min-width: 500px; min-height: 100px; }
+#history-table th span { color: $accent1; }
+#history-table th, #history-table td { width: 110px; padding: 15px 5px; color: $white; text-align: center }
+/*END of History Styles*/
+/*START of Footer Styles*/
+#footer { background-color: $accent2; box-shadow: 0 0 15px $accent2; }
+#footer p { margin: 0; color: $accent1; }
+.footer-link { color: $accent1; text-shadow: 0 0 10px $accent1; text-decoration: none; transition: 0.3s ease-in-out; }
+.footer-link:hover { color: $white; text-shadow: 0 0 5px $white; }
+/*END of Footer Styles*/
