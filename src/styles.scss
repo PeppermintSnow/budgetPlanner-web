@@ -36,14 +36,10 @@ input { background-color: $accent2; color: $accent1; }
 .form-control:focus { box-shadow: 0 0 5px $accent1; }
 .input-group-text, .form-control::placeholder { color: $accent1};
 
-input[type='number'] {
-    -moz-appearance:textfield;
-}
+input[type='number'] { -moz-appearance:textfield; }
 
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
+input::-webkit-inner-spin-button { -webkit-appearance: none; }
 
 .form-check-input { background-color: $accent2; border: 1px solid $accent1; }
 .form-check-input:focus { box-shadow: $accent1; }
@@ -66,3 +62,8 @@ input::-webkit-inner-spin-button {
 .footer-link { color: $accent1; text-shadow: 0 0 10px $accent1; text-decoration: none; transition: 0.3s ease-in-out; }
 .footer-link:hover { color: $white; text-shadow: 0 0 5px $white; }
 /*END of Footer Styles*/
+/*Responsive Web*/
+@media screen and (max-width: 600px) {
+    html { font-size: 0.75em; }
+    #history-table-container { min-width: 300px; }
+}
