@@ -2,9 +2,6 @@ import React from 'react';
 import icons from './Icons.js'
 
 export default class Summary extends React.Component {
-    constructor(props) {
-      super(props);
-    }
     render() {
       return (
         <div id="summary-table-container" class="container m-5">

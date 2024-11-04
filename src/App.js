@@ -78,7 +78,7 @@ export default class App extends React.Component {
       entryList = [];
     }
     handleUndo(event) {
-      const lastIndex = entryList.length != 0 ? entryList.pop() : null; 
+      const lastIndex = entryList.length !== 0 ? entryList.pop() : null; 
       if (lastIndex) {
         if (entryList.length === 0) {
           this.setState({
@@ -93,7 +93,7 @@ export default class App extends React.Component {
           this.setState({
             cashInput: lastIndex.cash ? lastIndex.cash : '',
             coinsInput: lastIndex.coins ? lastIndex.coins : '',
-            description: lastIndex.description | lastIndex.description != '---' ? lastIndex.description : '',
+            description: lastIndex.description | lastIndex.description !== '---' ? lastIndex.description : '',
             price: lastIndex.price ? lastIndex.price : '',
             totalCash: lastIndex.totalCash,
             totalCoins: lastIndex.totalCoins

@@ -2,9 +2,6 @@ import React from 'react';
 import icons from './Icons.js'
 
 export default class History extends React.Component {
-  constructor (props) {
-    super(props);
-  }
   render() {
     const entries = this.props.entries;
     return (
